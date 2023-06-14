@@ -29,17 +29,6 @@ public class UsersController {
 
     private final UsersService usersService;
 
-    // HTTP Methods
-    // =============================
-    // GET -> pobieramy zasoby  200 OK
-    // POST -> tworzymy zasoby  201 CREATED
-    // PUT -> całościowy update zasobów 201 CREATED
-    // PATCH (Łatka) -> częściowy update zasobu 201 CREATED
-    // DELETE -> usuwanie zasobów 204 NO_CONTENT
-    // HEAD -> pobranie nagłówków
-    // OPTIONS -> pobiera opcje, które mogą być wykonane na konkretnym zasobie
-
-    // https://example.com?pageNo=0&pageSize=10  - Request Param
     @GetMapping
     @Operation(summary = "Method is being used to get list of all users.")
     public ResponseEntity<List<UserDTO>> findAll(

@@ -55,7 +55,6 @@ class UsersControllerTest {
         Mockito.when(usersService.findUserByUsername(username)).thenThrow(exception);
 
         MockHttpServletRequestBuilder request = MockMvcRequestBuilders
-                // "/api/users/{username}", "admin"
                 .get(endpointPath, username)
                 .contentType(MediaType.APPLICATION_JSON_VALUE);
 

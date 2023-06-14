@@ -24,15 +24,6 @@ import java.util.Optional;
 //@SpringBootTest
 class UsersServiceTest {
 
-//    @Autowired
-//    private UserMapper userMapper;
-//
-//    @Autowired
-//    private UserService userService;
-//
-//    @MockBean
-//    private UserRepository userRepository;
-
     private final UserMapper userMapper = UserMapper.INSTANCE;
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
     private final UsersRepository usersRepository = Mockito.mock(UsersRepository.class);

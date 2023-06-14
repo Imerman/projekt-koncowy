@@ -14,13 +14,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class UserDTO {
 
-//    @NotNull
-//    @NotBlank
-//    @NotEmpty
-//    @PastOrPresent
-//    @FutureOrPresent
-//    @Pattern(regexp = "\\w{4,20}")
-
     private Role role;
 
     @NotBlank(message = "Email cannot be blank!")

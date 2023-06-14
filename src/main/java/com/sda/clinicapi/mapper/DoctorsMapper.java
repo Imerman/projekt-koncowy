@@ -7,7 +7,6 @@ import org.mapstruct.Mapping;
 import org.mapstruct.factory.Mappers;
 
 @Mapper
-//@Mapper(componentModel = "spring") - jeżeli nie jest zdefiniowany w pom.xml
 public interface DoctorsMapper {
 
     DoctorsMapper INSTANCE = Mappers.getMapper(DoctorsMapper.class);

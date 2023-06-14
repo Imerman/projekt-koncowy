@@ -9,9 +9,9 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DB_PASS: pass
+      MYSQL_DB_PASS: root.123
       MYSQL_DB_USERNAME: root
-      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_ROOT_PASSWORD: root.123
       MYSQL_DATABASE: clinic_db
     volumes:
       - type: volume
